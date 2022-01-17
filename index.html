@@ -18,8 +18,13 @@
     <script>
         const params = new URLSearchParams(window.location.search);
         const redirectLink = params.get("url");
-
-        location.replace(redirectLink);
+        
+        var str_pos = redirectLink.indexOf("https://");
+        if (str_pos > -1) {
+            location.replace(redirectLink);
+        } else {
+            location.replace("https://" + redirectLink);
+        }
     </script>
 </body>
 </html>
