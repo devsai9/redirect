@@ -20,7 +20,7 @@
         var str = "String";
         console.log(JSON.stringify(str));
         
-        /*const params = new URLSearchParams(window.location.search);
+        const params = new URLSearchParams(window.location.search);
         const redirectLink = params.get("url");
         
         // given url string
@@ -31,9 +31,10 @@
 
         // searchParams property is URLSearchParams object
         let args = url.searchParams; 
+        console.log(JSON.stringify(args));
 
         // loop to get all query parameters
-        args.forEach(function(value, key) {
+        /*(args.forEach(function(value, key) {
           console.log(key + '=' + value);
         });
 
