@@ -26,10 +26,10 @@
         let url = new URL(url_str);
 
         // searchParams property is URLSearchParams object
-        let search_params = url.searchParams; 
+        let args = url.searchParams; 
 
         // loop to get all query parameters
-        search_params.forEach(function(value, key) {
+        args.forEach(function(value, key) {
           console.log(key + '=' + value);
         });
     </script>
