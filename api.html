@@ -16,7 +16,11 @@
     <h1>API Responses!</h1> 
     <h2></h2>
     <script>
-        const params = new URLSearchParams(window.location.search);
+        
+        var str = "String";
+        JSON.stringify(str);
+        
+        /*const params = new URLSearchParams(window.location.search);
         const redirectLink = params.get("url");
         
         // given url string
@@ -33,17 +37,17 @@
           console.log(key + '=' + value);
         });
 
-        /*fetch(url_str)
+        fetch(url_str)
         .then(res => res.json())
         .then(out =>
           console.log('Checkout this JSON! ', out))
         .catch(err => console.log(err));*/
         
-        async function load() {
+        /*async function load() {
             let obj = await (await fetch(url_str)).json();
             console.log(obj);
         }
-        load();
+        load();*/
     </script>
 </body>
 </html>
